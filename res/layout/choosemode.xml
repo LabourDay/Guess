@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background" >
+    <TableLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <TableRow 
+            android:background="#00CCFF">
+    		<TextView 
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_marginLeft="60dp"
+        		android:text="当前玩家："
+        		android:textSize="20sp"/>
+    		<TextView 
+    		    android:id="@+id/player"
+    		    android:layout_width="200px"
+    		    android:layout_height="wrap_content"
+    		    android:textSize="20sp"/>
+    		<TextView 
+    		    android:id="@+id/exit"
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_marginLeft="10dp"
+    		    android:layout_gravity="right"
+    		    android:text="注销"
+    		    android:textSize="20sp"/>
+    		</TableRow>
+    </TableLayout>
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="选择模式"
+        android:textSize="32px"/>
+    
+    <Button 
+        android:id="@+id/one"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="一局定输赢"/>
+    
+    <Button 
+        android:id="@+id/three"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="三局两胜"/>
+    
+    <Button 
+        android:id="@+id/compete"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="拳王争霸"/>
+    
+    <Button 
+        android:id="@+id/changepw"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="修改密码"/>
+    
+    <Button 
+        android:id="@+id/contact"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="与我联系"/>
+    
+
+</LinearLayout>

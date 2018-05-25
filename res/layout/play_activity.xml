@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/g" >
+    
+    <TextView 
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="请出拳"
+        android:textSize="30px"/>
+    
+    <RadioGroup 
+        android:id="@+id/myrg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <RadioButton 
+            android:id="@+id/myrb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剪刀"
+            android:textSize="20px"/>
+        <RadioButton 
+            android:id="@+id/myrb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="石头"
+            android:textSize="20px"/>
+        <RadioButton 
+            android:id="@+id/myrb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="布"
+            android:textSize="20px"/>
+    </RadioGroup>
+    
+    <TableRow 
+        android:layout_marginTop="20dp">
+        <TextView 
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="玩 家"
+            android:textSize="20px"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="电 脑"
+            android:textSize="20px"/>
+    </TableRow>
+    
+    <TableRow 
+        android:layout_marginTop="20dp">
+        <ImageView 
+            android:id="@+id/myig1"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rock"/>
+        <ImageView 
+            android:id="@+id/myig2"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rock"/>      
+    </TableRow>
+    
+    <Button 
+        android:id="@+id/mybut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="返  回"
+        android:textSize="20px"/>
+
+</TableLayout>

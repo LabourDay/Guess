@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/g" >
+    <TableLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow 
+            android:layout_marginTop="5dp"
+            android:gravity="center">
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="得分："
+                android:textColor="#FF0033"
+                android:textSize="28px"/>
+            <TextView 
+                android:id="@+id/score"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#FF0033"
+                android:textSize="28px"/>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="66dp"
+                android:text="剩余时间："
+                android:textColor="#FF0033"
+                android:textSize="28px"/>
+            <TextView 
+                android:id="@+id/time"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#FF0033"
+                android:textSize="28px"/>
+        </TableRow>
+    </TableLayout>
+    
+    <TableLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="请出拳"
+        android:textSize="30px"/>
+    
+    <TableRow 
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        <Button 
+            android:id="@+id/cs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剪刀"
+            android:textSize="24px"
+            android:enabled="false"/>
+        
+        <Button 
+            android:id="@+id/cr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="石头"
+            android:textSize="24px"
+            android:enabled="false"/>
+        
+        <Button 
+            android:id="@+id/cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="布"
+            android:textSize="24px"
+            android:enabled="false"/>
+    </TableRow>
+    
+    <TableRow 
+        android:layout_marginTop="20dp">
+        <TextView 
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="玩 家"
+            android:textSize="20px"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="电 脑"
+            android:textSize="20px"/>
+    </TableRow>
+    
+    <TableRow 
+        android:layout_marginTop="20dp">
+        <ImageView 
+            android:id="@+id/c_myig1"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rock"/>
+        <ImageView 
+            android:id="@+id/c_myig2"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rock"/>      
+    </TableRow>
+    </TableLayout>
+    
+    <Button 
+        android:id="@+id/challenge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="开始挑战"/>
+    <Button 
+        android:id="@+id/c_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="返   回"/>
+
+</TableLayout>

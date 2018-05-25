@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/g" >
+    
+    <TextView 
+        android:id="@+id/tx1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="请出拳"
+        android:textSize="30px"/>
+    
+    <RadioGroup 
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <RadioButton 
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剪刀"
+            android:textSize="20px"/>
+        <RadioButton 
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="石头"
+            android:textSize="20px"/>
+        <RadioButton 
+            android:id="@+id/rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="布"
+            android:textSize="20px"/>
+    </RadioGroup>
+    
+    <TableRow 
+        android:layout_marginTop="20dp">
+        <TextView 
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="玩 家"
+            android:textSize="20px"/>
+        
+        <TextView
+            android:id="@+id/score1"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0"
+            android:textSize="20px" />
+       
+        <TextView
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="电 脑"
+            android:textSize="20px"/>
+        
+         <TextView
+             android:id="@+id/score2"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0"
+            android:textSize="20px"/>
+    </TableRow>
+    
+    <TableRow 
+        android:layout_marginTop="20dp">
+        <ImageView 
+            android:id="@+id/ig1"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rock"/>
+        <ImageView 
+            android:id="@+id/ig2"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rock"/>      
+    </TableRow>
+    
+    <Button 
+        android:id="@+id/con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="继  续"
+        android:textSize="20px"/>
+    
+    <Button 
+        android:id="@+id/mt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="返  回"
+        android:textSize="20px"/>
+
+</TableLayout>

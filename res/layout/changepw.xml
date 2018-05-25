@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TableRow 
+        android:gravity="center">
+        <TextView 
+            android:text="旧密码："
+            android:textSize="24px"
+           
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        <EditText 
+            android:id="@+id/old"
+            android:layout_width="70pt"
+            android:layout_height="wrap_content"
+            android:password="true"/>
+    </TableRow>
+    
+    <TableRow 
+        android:gravity="center">
+        <TextView 
+            android:text="新密码："
+         
+            android:textSize="24px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        <EditText 
+            android:id="@+id/nw"
+            android:layout_width="70pt"
+            android:layout_height="wrap_content"
+            android:password="true"/>
+        
+    </TableRow>
+
+</TableLayout>

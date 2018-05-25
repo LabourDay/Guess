@@ -1,0 +1,82 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wzh.guess"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.wzh.guess.Open"
+            		android:label="@string/app_name">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN"/>
+                
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.wzh.guess.Login"
+         			android:label="@string/app_name">
+            
+        </activity>
+        
+        <activity android:name="com.wzh.guess.Register"
+            		android:label="@string/app_name">
+            
+        </activity>
+        
+        <activity android:name="com.wzh.guess.Load"
+            		android:label="@string/app_name">
+            
+        </activity>
+        
+        <activity android:name="com.wzh.guess.ChooseMode"
+            		android:label="@string/app_name">
+            
+        </activity>
+        
+        <activity android:name="com.wzh.guess.Play"
+            		android:label="@string/app_name">
+            
+        </activity>
+        
+        <activity android:name="com.wzh.guess.PlayThree"
+            		android:label="@string/app_name">
+            
+        </activity>
+        
+        <activity android:name="com.wzh.guess.Compete"
+            		android:label="@string/app_name">
+            
+        </activity>
+        
+        <activity android:name="com.wzh.guess.Won"
+            		android:label="@string/app_name">
+            
+        </activity>
+        
+        <activity android:name="com.wzh.guess.Peace"
+            		android:label="@string/app_name">
+            
+        </activity>
+        
+        <activity android:name="com.wzh.guess.Lose"
+            		android:label="@string/app_name">
+            
+        </activity>
+        
+        <activity android:name="com.wzh.guess.Rank"
+            		android:label="@string/app_name">
+            
+        </activity>
+        
+    </application>
+    	
+</manifest>

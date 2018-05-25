@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    	
+        <TextView
+            android:id="@+id/rk" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="排行榜"
+            android:textSize="30px"
+            android:background="#FFCC00"/>
+        <TextView 
+    	    android:id="@+id/show"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_below="@id/rk"
+    	    android:layout_marginTop="0dp"
+   			android:gravity="center"
+    	    android:textSize="25px"/>
+    
+    <Button 
+        android:id="@+id/r_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="返回"/>
+
+    <ListView
+        android:id="@+id/rank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tb"
+        android:layout_marginTop="2dp" >
+    </ListView>
+
+    <TableLayout
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/show" 
+        android:layout_marginTop="10dp">
+
+        <TableRow >
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="id"
+                android:textSize="28px" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="player"
+                android:textSize="28px" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="score"
+                android:textSize="28px" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
